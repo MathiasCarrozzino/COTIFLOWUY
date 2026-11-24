@@ -76,6 +76,10 @@ var NB = {
 window.NB = NB;
 
 if (NB.native) {
+  LocalNotifications.addListener("localNotificationActionPerformed", function () {
+    window.__openOrders = true;
+    window.dispatchEvent(new Event("nb-open-orders"));
+  });
   App.addListener("appStateChange", function (s) {
     window.dispatchEvent(new Event(s.isActive ? "nb-resume" : "nb-pause"));
   });

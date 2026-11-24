@@ -77,6 +77,9 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 .mr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:10px 0;border-bottom:1px solid var(--ln)}.mr .ms{grid-column:1/3}.mr .mx{grid-column:3;justify-self:end}.mr .mn,.mr .mt{grid-column:1/-1}.mr .mt{font-size:.85rem;color:var(--mu);text-align:right;font-variant-numeric:tabular-nums}.mr .mt:empty{display:none}
 .mr input,.mr select,.mr .mx{min-width:0;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--ln);border-radius:10px;padding:10px}.mr .mx{cursor:pointer;padding:6px 14px}
 #lock{position:fixed;inset:0;z-index:99;background:var(--bg);display:grid;place-items:center;text-align:center;padding:24px}.lkb{max-width:320px}.lkb .ic{width:54px;height:54px;color:var(--ac)}
+.hb{flex-wrap:wrap}.kp{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}.it h3,.it small,.it .note{overflow-wrap:anywhere}.it .top{flex-wrap:wrap}.it .t{white-space:normal;text-align:right}.acts .btn{flex:1 1 auto}
+@media (max-width:520px){main{padding:12px}.hero{padding:14px;gap:10px}.hi{width:46px;height:46px}.hi .ic{width:28px;height:28px}.hero h1{font-size:1.15rem}.hb{width:100%;margin-left:0;display:grid;grid-template-columns:1fr 1fr 44px 44px;gap:6px}.hb .btn{padding:9px 4px;font-size:.82rem;white-space:nowrap;display:flex;align-items:center;justify-content:center}.hb .btn .ic{width:20px;height:20px}section{padding:12px}.g{grid-template-columns:1fr}.bar strong{font-size:1.25rem}}
+@media (max-width:440px){.row{grid-template-columns:1fr 1fr auto}.row input:first-child{grid-column:1/-1}}
 @media print{.seg,.acts,.bar,.row button,.add,.hero .btn{display:none!important}body{padding:0}}
 </style>
 </head>
@@ -191,12 +194,15 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 </div>
 <div id="v6" hidden>
 <button class="btn" id="back6">Volver</button>
-<section style="margin-top:12px"><h2>Nuevo pedido</h2>
+<div class="acts" style="margin:12px 0"><button class="btn p" id="onw">Nuevo pedido</button></div>
+<div id="opn" hidden>
+<section><h2 id="oh">Nuevo pedido</h2>
 <div class="g">
 <label>Cliente<span class="in"><input id="oc" type="text" autocomplete="off"></span></label>
 <label>Trabajo<span class="in"><select id="ot"><option>Impresión 3D</option><option>Láser diodo</option><option>Costura</option></select></span></label>
 <label style="grid-column:1/-1">Detalle<span class="in"><input id="od" type="text" autocomplete="off" placeholder="Ej.: 10 chirimbolos con nombre, MDF 3 mm"></span></label>
 <label>Fecha de entrega<span class="in"><input id="of" type="date"></span></label>
+<label>Monto total<span class="in"><input id="omt" type="number" step="any" inputmode="decimal" placeholder="0"><em id="omc">$</em></span></label>
 </div>
 <div class="acts"><button class="btn p" id="osv">Guardar pedido</button><button class="btn" id="ocn" hidden>Cancelar edición</button></div>
 <p class="note" id="om" role="status"></p>
@@ -205,6 +211,7 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 <label class="sw"><input type="checkbox" id="oav" role="switch" value="0"><span>Avisar con notificación los pedidos pendientes</span><span class="note" id="oan"></span></label>
 <div class="g" style="margin-top:12px"><label>Primer aviso<span class="in"><input type="time" id="ot1"></span></label><label>Segundo aviso<span class="in"><input type="time" id="ot2"></span></label></div>
 </section>
+</div>
 <div class="kp" id="ok"></div>
 <div class="seg" role="group" aria-label="Filtrar pedidos"><button id="of1" aria-pressed="true">Pendientes</button><button id="of2" aria-pressed="false">Hechos</button><button id="of3" aria-pressed="false">Todos</button></div>
 <div id="ol"></div>
@@ -496,7 +503,7 @@ function renderStats(){var mo=sData(),keys=Object.keys(mo).sort(),now=mk(Date.no
 var sel=op.indexOf($("sm").value)>=0?$("sm").value:(keys.indexOf(now)>=0||!keys.length?now:keys[keys.length-1]);
 $("sm").innerHTML=op.map(function(k){return'<option value="'+k+'">'+mlab(k)+"</option>"}).join("");$("sm").value=sel;
 var pr=sPer(mo,sel),l=pr.l,a=sAgg(l);$("sh").textContent=pr.t;
-$("sk").innerHTML=[["Presupuestos",a.n],["Piezas",nf(a.q)],["Horas de máquina",shr(a.h)+" h"],["Total",c+" "+smy(a.tot)]].map(function(x){return"<div><small>"+x[0]+"</small><b>"+x[1]+"</b></div>"}).join("");
+$("sk").innerHTML=[["Presupuestos",a.n],["Piezas",nf(a.q)],["Horas de máquina",shr(a.h)+" h"],["Total",c+" "+smy(a.tot)],["Ganancia",c+" "+smy(a.gan)],["A destinar a mantenimiento",c+" "+smy(a.mc)]].map(function(x){return"<div><small>"+x[0]+"</small><b>"+x[1]+"</b></div>"}).join("");
 $("si").innerHTML=l.length?SK.map(function(k,i){return'<div class="bi"><div class="l"><span>'+SL[i]+"</span><b>"+c+" "+smy(a[k])+"</b></div></div>"}).join(""):'<p class="note">'+(pr.e?"Elegí una fecha o un rango de fechas.":"No hay presupuestos aprobados en este período.")+"</p>";
 var all=sAgg([].concat.apply([],keys.map(function(k){return mo[k]}))),row=function(n,g){return"<tr><td>"+n+"</td><td>"+g.n+"</td><td>"+nf(g.q)+"</td><td>"+shr(g.h)+"</td>"+SK.map(function(s){return"<td>"+smy(g[s])+"</td>"}).join("")+"</tr>"};
 $("sm2").innerHTML=keys.length?"<tr><th>Mes</th><th>Presup.</th><th>Piezas</th><th>Horas</th>"+SL.map(function(x){return"<th>"+x+"</th>"}).join("")+"</tr>"+keys.slice().reverse().map(function(k){return row(mlab(k),sAgg(mo[k]))}).join("")+row("Total",all):"";
@@ -519,7 +526,7 @@ return{l:all.filter(function(b){var y=ymd(b.okts||b.ts);return y>=f&&y<=u}),t:f=
 $("srb").onclick=function(){sRange=!sRange;this.textContent=sRange?"Volver a mensual":"Elegir fechas";$("srg").hidden=$("srn").hidden=!sRange;$("sml").hidden=sRange;renderStats()};
 $("sf").onchange=$("su").onchange=renderStats;
 $("sm").onchange=renderStats;$("st").onchange=renderStats;$("sx").onclick=sExcel;$("bst").onclick=function(){renderStats();view(5)};$("back5").onclick=function(){view(1)};
-$("list").onchange=function(e){var t=e.target;if(!t.dataset||t.dataset.a!=="k")return;var b=LIST.filter(function(x){return x.id===t.dataset.i})[0];if(!b)return;b.ok=t.checked;if(t.checked)b.okts=Date.now();else delete b.okts;b.upd=Date.now();saveL();t.closest(".it").classList.toggle("ok",t.checked)};
+$("list").onchange=function(e){var t=e.target;if(!t.dataset||t.dataset.a!=="k")return;var b=LIST.filter(function(x){return x.id===t.dataset.i})[0];if(!b)return;b.ok=t.checked;if(t.checked)b.okts=Date.now();else delete b.okts;b.upd=Date.now();saveL();if(t.checked&&window.ordFromBudget&&ordFromBudget(b))msg("Presupuesto aprobado: se creó el pedido en Pedidos. Cargale la fecha de entrega.");t.closest(".it").classList.toggle("ok",t.checked)};
 function bkCheck(){var t=0,sn=0;try{t=+localStorage.getItem("calc3dlaser.lastbk")||0;sn=+localStorage.getItem("calc3dlaser.bksnooze")||0}catch(e){}
 if(!LIST.length||Date.now()<sn){$("bkb").hidden=true;return}
 var ref=t||Math.min.apply(null,LIST.map(function(b){return b.ts})),d=Math.floor((Date.now()-ref)/864e5);
