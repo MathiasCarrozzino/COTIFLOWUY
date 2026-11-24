@@ -1,0 +1,5 @@
+node_modules/
+android/
+www/native.js
+*.jks
+*.keystore
