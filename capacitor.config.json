@@ -1,0 +1,16 @@
+{
+  "appId": "com.miemprendimiento.precios3dlaser",
+  "appName": "Precios 3D y L\u00e1ser",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css"
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_pedidos"
+    }
+  }
+}
