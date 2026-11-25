@@ -6,6 +6,14 @@ Incluye, además de todas las funciones de la calculadora:
 - **Desbloqueo con huella, rostro o PIN del teléfono** (Ajustes, icono del engranaje, Seguridad).
 - **Respaldo de datos**: exporta e importa presupuestos, materiales y datos de la empresa en un archivo (Ajustes, Respaldo de datos).
 - **Pedidos**: botón "Pedidos" arriba. Cargás cliente, trabajo, detalle y fecha de entrega; marcás hechos, editás y filtrás. Entran en el respaldo.
+- **Ajustes**: rubro con el que arranca la app, tema (automático, claro u oscuro), 5 paletas de colores y nombre y logo propios para cada emprendimiento (3D, láser y costura); el recibo usa los del rubro del presupuesto.
+- **Ayuda**: el botón "?" del encabezado abre un manual de uso dentro de la app. Las pantallas ya no llevan textos explicativos.
+- **Seña y saldo** en los pedidos, con el botón "Cobrar saldo". "A cobrar" suma lo que falta cobrar de todos los pedidos.
+- **Enviar por WhatsApp** un resumen del presupuesto (sin el desglose de costos).
+- **Pedidos desde presupuestos**: al activar "Aprobado" en un presupuesto guardado se crea solo un pedido con cliente, detalle, cantidad, material, tipo de trabajo y monto total. Después le cargás la fecha de entrega. No se duplica si lo desactivás y volvés a activar.
+- **Monto total** en cada pedido y el total "A cobrar" de los pendientes.
+- **Estadísticas**: además del total, muestran la ganancia y lo que corresponde destinar a mantenimiento de las máquinas.
+- **Al tocar una notificación** la app se abre directo en Pedidos.
 - **Avisos por notificación** de los pedidos pendientes (por defecto 10:00 y 19:00, editables en la pantalla Pedidos). Funcionan con la app cerrada: se programan los próximos 30 días y se actualizan cada vez que cambiás un pedido o abrís la app. Si pasás más de 30 días sin abrirla, se agotan; al abrirla se programan de nuevo. La primera vez Android pide permiso de notificaciones.
 - **Compartir en Android**: los PDF y Excel se guardan en la caché y se abre el menú de compartir del teléfono. Ahí elegís Gmail (con el archivo adjunto), Drive, WhatsApp o "guardar en el teléfono".
 - Botón "Atrás" de Android: vuelve de las pantallas internas en vez de cerrar la app.
@@ -13,6 +21,7 @@ Incluye, además de todas las funciones de la calculadora:
 ## Contenido
 - `www/index.html`: la calculadora.
 - `www/pedidos.js`: pantalla de Pedidos y su lógica de avisos.
+- `www/ajustes.js`: preferencias (rubro inicial, tema y paleta).
 - `src/native.js`: puente con las funciones del teléfono (huella, compartir archivos, botón atrás, notificaciones).
 - `capacitor.config.json`: nombre y identificador de la app.
 - `.github/workflows/android.yml`: la receta que compila el APK en GitHub.

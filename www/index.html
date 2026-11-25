@@ -78,18 +78,18 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 .mr input,.mr select,.mr .mx{min-width:0;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--ln);border-radius:10px;padding:10px}.mr .mx{cursor:pointer;padding:6px 14px}
 #lock{position:fixed;inset:0;z-index:99;background:var(--bg);display:grid;place-items:center;text-align:center;padding:24px}.lkb{max-width:320px}.lkb .ic{width:54px;height:54px;color:var(--ac)}
 .hb{flex-wrap:wrap}.kp{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}.it h3,.it small,.it .note{overflow-wrap:anywhere}.it .top{flex-wrap:wrap}.it .t{white-space:normal;text-align:right}.acts .btn{flex:1 1 auto}
-@media (max-width:520px){main{padding:12px}.hero{padding:14px;gap:10px}.hi{width:46px;height:46px}.hi .ic{width:28px;height:28px}.hero h1{font-size:1.15rem}.hb{width:100%;margin-left:0;display:grid;grid-template-columns:1fr 1fr 44px 44px;gap:6px}.hb .btn{padding:9px 4px;font-size:.82rem;white-space:nowrap;display:flex;align-items:center;justify-content:center}.hb .btn .ic{width:20px;height:20px}section{padding:12px}.g{grid-template-columns:1fr}.bar strong{font-size:1.25rem}}
+@media (max-width:520px){main{padding:12px}.hero{padding:14px;gap:10px}.hi{width:46px;height:46px}.hi .ic{width:28px;height:28px}.hero h1{font-size:1.15rem}.hb{width:100%;margin-left:0;display:grid;grid-template-columns:repeat(6,1fr);gap:6px}#bl2,#bpd{grid-column:span 3}#bst,#bhp,#bco{grid-column:span 2}.hb .btn{padding:9px 4px;font-size:.82rem;white-space:nowrap;display:flex;align-items:center;justify-content:center}.hb .btn .ic{width:20px;height:20px}section{padding:12px}.g{grid-template-columns:1fr}.bar strong{font-size:1.25rem}}
 @media (max-width:440px){.row{grid-template-columns:1fr 1fr auto}.row input:first-child{grid-column:1/-1}}
+details{background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-bottom:8px}summary{font-weight:650;cursor:pointer}details p,details li{color:var(--mu);font-size:.92rem;margin:8px 0 0}details ul{margin:6px 0 0;padding-left:20px}
 @media print{.seg,.acts,.bar,.row button,.add,.hero .btn{display:none!important}body{padding:0}}
 </style>
 </head>
 <body data-mode="3">
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i3" viewBox="0 0 24 24"><path d="M3 4h18M12 4v5M9.5 9h5L12 13zM4 20h16M6 20v-3h12v3"/></symbol><symbol id="iL" viewBox="0 0 24 24"><path d="M8 2h8v6H8zM12 8v8M7.5 21l4.5-5 4.5 5M5 14l2 1M19 14l-2 1"/></symbol><symbol id="iC" viewBox="0 0 24 24"><path d="M7 3h10M7 21h10M8 3v18M16 3v18M8 7l8 3M8 11l8 3M8 15l8 3"/></symbol><symbol id="ib" viewBox="0 0 24 24"><path d="M5 20V11M12 20V4M19 20v-6"/></symbol><symbol id="il" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol><symbol id="ig" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M10.3 2h3.4l.5 2.4 1.7.7 2.1-1.3 2.4 2.4-1.3 2.1.7 1.7 2.4.5v3.4l-2.4.5-.7 1.7 1.3 2.1-2.4 2.4-2.1-1.3-1.7.7-.5 2.4h-3.4l-.5-2.4-1.7-.7-2.1 1.3-2.4-2.4 1.3-2.1-.7-1.7L2 13.7v-3.4l2.4-.5.7-1.7-1.3-2.1 2.4-2.4 2.1 1.3 1.7-.7z"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i3" viewBox="0 0 24 24"><path d="M3 4h18M12 4v5M9.5 9h5L12 13zM4 20h16M6 20v-3h12v3"/></symbol><symbol id="iL" viewBox="0 0 24 24"><path d="M8 2h8v6H8zM12 8v8M7.5 21l4.5-5 4.5 5M5 14l2 1M19 14l-2 1"/></symbol><symbol id="iC" viewBox="0 0 24 24"><path d="M7 3h10M7 21h10M8 3v18M16 3v18M8 7l8 3M8 11l8 3M8 15l8 3"/></symbol><symbol id="ih" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1.1.9-1.1 1.7M12 17h.01"/></symbol><symbol id="ib" viewBox="0 0 24 24"><path d="M5 20V11M12 20V4M19 20v-6"/></symbol><symbol id="il" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol><symbol id="ig" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M10.3 2h3.4l.5 2.4 1.7.7 2.1-1.3 2.4 2.4-1.3 2.1.7 1.7 2.4.5v3.4l-2.4.5-.7 1.7 1.3 2.1-2.4 2.4-2.1-1.3-1.7.7-.5 2.4h-3.4l-.5-2.4-1.7-.7-2.1 1.3-2.4-2.4 1.3-2.1-.7-1.7L2 13.7v-3.4l2.4-.5.7-1.7-1.3-2.1 2.4-2.4 2.1 1.3 1.7-.7z"/></symbol></svg>
 <main>
-<header class="hero"><span class="hi"><svg class="ic" data-m="3"><use href="#i3"/></svg><svg class="ic" data-m="L"><use href="#iL"/></svg><svg class="ic" data-m="C"><use href="#iC"/></svg></span><div><h1>Calculadora de precios</h1><p data-m="3">Impresión 3D</p><p data-m="L">Corte y grabado láser diodo</p><p data-m="C">Costura y confección</p></div><span class="hb"><button class="btn" id="bl2">Presupuestos (0)</button><button class="btn" id="bpd">Pedidos (0)</button><button class="btn" id="bst" aria-label="Estadísticas" title="Estadísticas"><svg class="ic"><use href="#ib"/></svg></button><button class="btn" id="bco" aria-label="Datos de la empresa" title="Datos de la empresa"><svg class="ic"><use href="#ig"/></svg></button></span></header>
+<header class="hero"><span class="hi"><svg class="ic" data-m="3"><use href="#i3"/></svg><svg class="ic" data-m="L"><use href="#iL"/></svg><svg class="ic" data-m="C"><use href="#iC"/></svg></span><div><h1>Calculadora de precios</h1><p data-m="3">Impresión 3D</p><p data-m="L">Corte y grabado láser diodo</p><p data-m="C">Costura y confección</p></div><span class="hb"><button class="btn" id="bl2">Presupuestos (0)</button><button class="btn" id="bpd">Pedidos (0)</button><button class="btn" id="bst" aria-label="Estadísticas" title="Estadísticas"><svg class="ic"><use href="#ib"/></svg></button><button class="btn" id="bhp" aria-label="Ayuda" title="Ayuda"><svg class="ic"><use href="#ih"/></svg></button><button class="btn" id="bco" aria-label="Datos de la empresa" title="Datos de la empresa"><svg class="ic"><use href="#ig"/></svg></button></span></header>
 <div id="v1">
 <div class="bkb" id="bkb" hidden><span id="bkt"></span><div class="acts"><button class="btn p" id="bkgo">Hacer respaldo</button><button class="btn" id="bklt">Más tarde</button></div></div>
-<p class="lead">Calculá cuánto cobrar por un trabajo de impresión 3D, de corte y grabado láser diodo o de costura. Todos los valores se pueden editar y quedan guardados en este navegador.</p>
 <div class="seg" role="group" aria-label="Tipo de trabajo">
 <button id="b3" aria-pressed="true"><svg class="ic"><use href="#i3"/></svg>Impresión 3D</button>
 <button id="bL" aria-pressed="false"><svg class="ic"><use href="#iL"/></svg>Láser diodo</button>
@@ -100,12 +100,10 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 <h2>Otros costos</h2>
 <div id="rows"></div>
 <button class="btn add" id="add">Añadir línea</button>
-<p class="note">Concepto, monto y cantidad. Sirve para tornillos, imanes, pintura, cinta de enmascarar, embalaje, envío…</p>
 </section>
 <section>
 <h2>Ganancia</h2>
 <div class="g"><label>Porcentaje de ganancia<span class="in"><input type="number" id="gan" step="any" value="30" inputmode="decimal"><em>%</em></span></label></div>
-<p class="note">Se aplica sobre la suma de todos los costos, antes del IVA.</p>
 </section>
 <section>
 <h2>Impuestos</h2>
@@ -122,7 +120,7 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 <div><span>IVA</span><b id="s6"></b></div>
 <div class="big"><span>Precio final</span><b id="s7"></b></div>
 <div id="uw"><span>Precio por pieza</span><b id="s8"></b></div>
-<div class="acts"><button class="btn p" id="bs">Guardar presupuesto</button><button class="btn" id="bg">Enviar por Gmail</button><button class="btn" id="bsc" hidden>Guardar como copia</button><button class="btn" id="bp">Descargar PDF</button><button class="btn" id="bx">Descargar Excel</button><button class="btn" id="brc">Recibo PDF</button><button class="btn" id="cp">Copiar resumen</button><button class="btn" id="pr_">Imprimir</button></div>
+<div class="acts"><button class="btn p" id="bs">Guardar presupuesto</button><button class="btn" id="bg">Enviar por Gmail</button><button class="btn" id="bwa">Enviar por WhatsApp</button><button class="btn" id="bsc" hidden>Guardar como copia</button><button class="btn" id="bp">Descargar PDF</button><button class="btn" id="bx">Descargar Excel</button><button class="btn" id="brc">Recibo PDF</button><button class="btn" id="cp">Copiar resumen</button><button class="btn" id="pr_">Imprimir</button></div>
 <p class="note msg" role="status"></p>
 </section>
 </div>
@@ -154,9 +152,14 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 </div>
 <div id="v4" hidden>
 <button class="btn" id="back4">Volver</button>
-<section style="margin-top:12px"><h2>Empresa</h2>
-<p class="note" style="margin:0 0 12px">El nombre y el logo aparecen en los recibos y se guardan en este dispositivo.</p>
-<div class="g"><label>Nombre de la empresa<span class="in"><input id="cn" type="text" autocomplete="off" placeholder="Mi emprendimiento"></span></label>
+<section style="margin-top:12px"><h2>Preferencias</h2>
+<div class="g">
+<label>Rubro al iniciar<span class="in"><select id="sst"><option value="3">Impresión 3D</option><option value="L">Láser diodo</option><option value="C">Costura</option></select></span></label>
+<label>Tema<span class="in"><select id="stm"><option value="auto">Automático</option><option value="light">Claro</option><option value="dark">Oscuro</option></select></span></label>
+<label>Paleta de colores<span class="in"><select id="spl"><option value="orig">Original</option><option value="ocean">Océano</option><option value="bosque">Bosque</option><option value="atardecer">Atardecer</option><option value="grafito">Grafito</option></select></span></label>
+</div></section>
+<section><h2>Empresa</h2>
+<div class="g"><label>Emprendimiento<span class="in"><select id="cs"><option value="3">Impresión 3D</option><option value="L">Láser diodo</option><option value="C">Costura</option></select></span></label><label>Nombre de la empresa<span class="in"><input id="cn" type="text" autocomplete="off" placeholder="Mi emprendimiento"></span></label>
 <label>Logo<span class="in"><input type="file" id="cl" accept="image/*"></span></label></div>
 <div class="acts" style="align-items:center"><img id="cp_" alt="Logo de la empresa" style="max-width:96px;max-height:96px;border:1px solid var(--ln);border-radius:10px;background:#fff" hidden><button class="btn" id="cx" hidden>Quitar logo</button></div>
 <p class="note msg" role="status"></p>
@@ -179,7 +182,7 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 </div>
 <div class="acts"><button class="btn" id="srb">Elegir fechas</button></div>
 <div class="g" id="srg" hidden style="margin-top:12px"><label>Desde<span class="in"><input type="date" id="sf"></span></label><label>Hasta<span class="in"><input type="date" id="su"></span></label></div>
-<p class="note" id="srn" hidden>Si completás una sola fecha, se toma ese día.</p>
+<p class="note" id="srn" hidden></p>
 <p class="note" id="sn"></p>
 </section>
 <section><h2 id="sh">Totales</h2>
@@ -203,6 +206,7 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 <label style="grid-column:1/-1">Detalle<span class="in"><input id="od" type="text" autocomplete="off" placeholder="Ej.: 10 chirimbolos con nombre, MDF 3 mm"></span></label>
 <label>Fecha de entrega<span class="in"><input id="of" type="date"></span></label>
 <label>Monto total<span class="in"><input id="omt" type="number" step="any" inputmode="decimal" placeholder="0"><em id="omc">$</em></span></label>
+<label>Seña cobrada<span class="in"><input id="osn" type="number" step="any" inputmode="decimal" placeholder="0"><em id="osc">$</em></span></label>
 </div>
 <div class="acts"><button class="btn p" id="osv">Guardar pedido</button><button class="btn" id="ocn" hidden>Cancelar edición</button></div>
 <p class="note" id="om" role="status"></p>
@@ -215,6 +219,19 @@ body[data-mode="3"] [data-m="L"],body[data-mode="3"] [data-m="C"],body[data-mode
 <div class="kp" id="ok"></div>
 <div class="seg" role="group" aria-label="Filtrar pedidos"><button id="of1" aria-pressed="true">Pendientes</button><button id="of2" aria-pressed="false">Hechos</button><button id="of3" aria-pressed="false">Todos</button></div>
 <div id="ol"></div>
+</div>
+<div id="v7" hidden>
+<button class="btn" id="back7">Volver</button>
+<h2 style="margin:16px 0 10px">Cómo usar la app</h2>
+<details open><summary>Primeros pasos</summary><p>Elegí arriba el rubro (Impresión 3D, Láser o Costura), completá los datos del trabajo y mirá el precio final en la barra de abajo, que se actualiza sola. Todo se guarda en tu teléfono y funciona sin internet.</p></details>
+<details><summary>Calcular un precio</summary><ul><li>Material, electricidad y mano de obra se calculan con los valores que cargues.</li><li>“Máquina y mantenimiento” reparte el desgaste de tu equipo en cada trabajo.</li><li>“Otros costos” sirve para tornillos, pintura, embalaje, envío, etc.</li><li>Después se suman la ganancia (%) y el IVA.</li><li>Los interruptores “por pieza” multiplican el tiempo, el material o la mano de obra por la cantidad.</li><li>En 3D podés cargar un archivo gcode para completar tiempo y peso.</li></ul></details>
+<details><summary>Guardar y enviar un presupuesto</summary><ul><li>“Guardar presupuesto” lo deja en la lista de Presupuestos.</li><li>Podés enviarlo por Gmail (con el PDF adjunto) o por WhatsApp (resumen con el precio final).</li><li>También se descarga en PDF o Excel, y se puede generar un recibo de pago.</li></ul></details>
+<details><summary>Aprobar presupuestos</summary><p>En Presupuestos, activá “Aprobado” cuando el cliente acepta. El presupuesto pasa a las estadísticas y se crea solo un pedido con sus datos. Después le cargás la fecha de entrega.</p></details>
+<details><summary>Pedidos</summary><ul><li>“Nuevo pedido” abre el formulario: cliente, trabajo, detalle, entrega, monto y seña.</li><li>Cada pedido muestra el saldo que falta cobrar. “Cobrar saldo” lo marca como pagado.</li><li>“Marcar hecho” lo pasa a Hechos. Los filtros muestran pendientes, hechos o todos.</li><li>“A cobrar” suma el saldo de todos los pedidos.</li></ul></details>
+<details><summary>Avisos</summary><p>La app te avisa con una notificación a los horarios que elijas en Pedidos (al abrir “Nuevo pedido”). Se programan los próximos 30 días y se actualizan cada vez que cambiás un pedido o abrís la app. Si tocás la notificación, se abre Pedidos. La primera vez Android te pide permiso.</p></details>
+<details><summary>Estadísticas</summary><p>Cuenta solo los presupuestos aprobados, en el mes en que se aprobaron. Muestra el total, la ganancia y lo que corresponde destinar a mantenimiento de tus máquinas. Podés ver por mes o elegir un rango de fechas, y descargar el reporte en Excel.</p></details>
+<details><summary>Ajustes</summary><ul><li>Rubro al iniciar, tema (claro, oscuro o automático) y paleta de colores.</li><li>Nombre y logo de cada emprendimiento: salen en los recibos según el rubro.</li><li>Bloqueo con huella, rostro o PIN (solo en la app Android).</li></ul></details>
+<details><summary>Respaldo de tus datos</summary><p>Tus datos viven solo en este teléfono. En Ajustes, “Exportar respaldo” guarda un archivo con presupuestos, pedidos, materiales y empresas; “Importar respaldo” lo recupera, por ejemplo al cambiar de celular. La app te recuerda hacerlo cada 30 días.</p></details>
 </div>
 </main>
 <div id="lock" hidden><div class="lkb"><svg class="ic"><use href="#il"/></svg><h2>Calculadora bloqueada</h2><p class="note" style="margin:0 0 16px">Confirmá tu identidad para continuar.</p><button class="btn p" id="ul">Desbloquear</button><p class="note" id="lmsg"></p></div></div>
@@ -235,7 +252,7 @@ var SEC=[
 var mode="3",KEY="calc3dlaser.v1",$=function(i){return document.getElementById(i)};
 function fld(f){var u=String(f[3]||"").replace("$",'<span class="cur">$</span>'),tx=f[4]==="text",m=f[5]||(/^[3LC]$/.test(f[4])?f[4]:"");
 return '<label'+(m?' data-m="'+m+'"':'')+'>'+f[1]+'<span class="in"><input id="'+f[0]+'" '+(tx?'type="text"':'type="number" step="any" inputmode="decimal"')+' value="'+f[2]+'">'+(u?'<em>'+u+'</em>':'')+'</span></label>'}
-$("form").innerHTML=SEC.map(function(s){return '<section'+(s.m?' data-m="'+s.m+'"':'')+'><h2>'+s.t+'</h2><div class="g">'+s.f.map(fld).join("")+'</div>'+(s.n?'<p class="note">'+s.n+'</p>':'')+'</section>'}).join("");
+$("form").innerHTML=SEC.map(function(s){return '<section'+(s.m?' data-m="'+s.m+'"':'')+'><h2>'+s.t+'</h2><div class="g">'+s.f.map(fld).join("")+'</div>'+''+'</section>'}).join("");
 var DEFC=[{n:"Algodón",p:8,w:150},{n:"Fleece / polar",p:10,w:150},{n:"Pana",p:12,w:150},{n:"Felpa (peluche)",p:15,w:150},{n:"Lanilla",p:7,w:150}],MK="calc3dlaser.mats",MAT={"3":[{n:"PLA",p:22,w:1000},{n:"PETG",p:24,w:1000},{n:"ASA",p:28,w:1000},{n:"TPU",p:32,w:1000},{n:"Nailon (PA)",p:45,w:1000}],"L":[{n:"MDF 3 mm",p:8,w:60,h:40},{n:"Contrachapado 3 mm",p:10,w:60,h:40},{n:"Acrílico 3 mm",p:18,w:60,h:40},{n:"Cuero",p:12,w:60,h:40},{n:"Cartón",p:3,w:60,h:40}]};
 try{var m0=JSON.parse(localStorage.getItem(MK)||"null");if(m0&&m0["3"]&&m0.L)MAT=m0}catch(e){}
 if(!MAT.C)MAT.C=DEFC.slice();
@@ -254,7 +271,7 @@ if(i>=0)MAT[k][i]=o;else{MAT[k].push(o);i=MAT[k].length-1}saveM();fillSel(k,i);f
 else{var v=$(c.sel).value;if(v===""){flash(t,"Elegí uno primero");return}
 if(t.dataset.c){MAT[k].splice(+v,1);saveM();fillSel(k);delete t.dataset.c;flash(t,"Eliminado")}else{t.dataset.c=1;flash(t,"¿Confirmar?");t.dataset.c=1}}}}
 addPre("3");addPre("L");addPre("C");
-var gl=document.createElement("label");gl.innerHTML='Cargar archivo gcode<span class="in"><input type="file" id="gc" accept=".gcode,.gco,.g,.txt"></span><span class="note" id="gcn">Lee tiempo y peso de PrusaSlicer y OrcaSlicer; en Cura solo el tiempo.</span>';
+var gl=document.createElement("label");gl.innerHTML='Cargar archivo gcode<span class="in"><input type="file" id="gc" accept=".gcode,.gco,.g,.txt"></span><span class="note" id="gcn"></span>';
 $("pre3").closest("label").parentNode.insertBefore(gl,$("pre3").closest("label"));
 $("gc").onchange=function(){var f=this.files[0];if(!f)return;var a=f.slice(0,30000),b=f.size>230000?f.slice(f.size-200000):null;
 Promise.all([a.text(),b?b.text():Promise.resolve("")]).then(function(x){var t=x[0]+"\n"+x[1],m=t.match(/estimated printing time \(normal mode\)\s*=\s*([^\r\n]+)/i),s=null,ok=[];
@@ -285,15 +302,16 @@ function saveB(asNew){var b=snap(),i=-1;if(curId&&!asNew)LIST.forEach(function(x
 if(i>=0){b.id=curId;b.ts=LIST[i].ts;b.upd=Date.now();b.ok=LIST[i].ok;b.okts=LIST[i].okts;LIST[i]=b}else{b.id=Date.now().toString(36);LIST.unshift(b);curId=b.id}
 if(saveL()){resetJob();msg("Presupuesto guardado y campos reiniciados. Lo encontrás en el botón Presupuestos.")}}
 function openB(b){mode=b.mode;$("tpp").value="0";$("mpp").value="0";$("lpp").value="0";Object.keys(b.v).forEach(function(k){if($(k))$(k).value=b.v[k]});$("rows").innerHTML="";(b.rows||[]).forEach(function(r){addRow(r[0],r[1],r[2])});$("mrows").innerHTML="";(b.mrows||[]).forEach(function(r){addMat(r[0],r[1],r[2],r[3])});curId=b.id;view(1);syncTpp();setMode(b.mode);sync();msg("Presupuesto abierto: podés editarlo y actualizarlo.")}
-function view(k){[1,2,3,4,5,6].forEach(function(i){$("v"+i).hidden=k!==i});$("bpd").hidden=k!==1;if(k===6&&window.renderOrd)renderOrd();$("bar").hidden=k!==1;$("bl2").hidden=k!==1;$("bco").hidden=k!==1;$("bst").hidden=k!==1;if(k===2)renderList();if(k===1)bkCheck();window.scrollTo(0,0)}
-var CK="calc3dlaser.company",CO={n:"",l:"",w:0,h:0},RCUR="$",pv=1;
-try{var c0=JSON.parse(localStorage.getItem(CK)||"null");if(c0)CO=c0}catch(e){}
-function saveCo(){try{localStorage.setItem(CK,JSON.stringify(CO))}catch(e){msg("No se pudo guardar en este navegador.")}}
+function view(k){[1,2,3,4,5,6,7].forEach(function(i){$("v"+i).hidden=k!==i});$("bpd").hidden=k!==1;if(k===6&&window.renderOrd)renderOrd();$("bar").hidden=k!==1;$("bl2").hidden=k!==1;$("bco").hidden=k!==1;$("bst").hidden=$("bhp").hidden=k!==1;if(k===4){CSEL=mode;$("cs").value=mode;CO=COS[CSEL];showCo()}if(k===2)renderList();if(k===1)bkCheck();window.scrollTo(0,0)}
+var CK="calc3dlaser.company",CK2="calc3dlaser.companies",COS={"3":{n:"",l:"",w:0,h:0},"L":{n:"",l:"",w:0,h:0},"C":{n:"",l:"",w:0,h:0}},CSEL="3",RM="3",RCUR="$",pv=1;
+try{var c1=JSON.parse(localStorage.getItem(CK2)||"null");if(c1){["3","L","C"].forEach(function(m){if(c1[m])COS[m]=c1[m]})}else{var c0=JSON.parse(localStorage.getItem(CK)||"null");if(c0)["3","L","C"].forEach(function(m){COS[m]=JSON.parse(JSON.stringify(c0))})}}catch(e){}
+var CO=COS["3"];
+function saveCo(){try{localStorage.setItem(CK2,JSON.stringify(COS))}catch(e){msg("No se pudo guardar en este navegador.")}}
 function showCo(){$("cn").value=CO.n;$("cp_").hidden=!CO.l;if(CO.l)$("cp_").src=CO.l;$("cx").hidden=!CO.l}
 function procLogo(f){var rd=new FileReader();rd.onload=function(){var im=new Image();im.onload=function(){var sc=Math.min(1,300/Math.max(im.width,im.height)),w=Math.max(1,Math.round(im.width*sc)),h=Math.max(1,Math.round(im.height*sc)),c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,w,h);x.drawImage(im,0,0,w,h);CO.l=c.toDataURL("image/jpeg",0.9);CO.w=w;CO.h=h;saveCo();showCo()};im.onerror=function(){msg("No se pudo leer la imagen.")};im.src=rd.result};rd.readAsDataURL(f)}
 function nf(v){var s=Math.abs(v).toFixed(2).split("."),i=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");return(v<0?"-":"")+i+(s[1]==="00"?"":","+s[1])}
-function recTot(){$("rt").textContent="Total: "+RCUR+" "+nf(n("rq")*n("ru"))+(CO.n?"":". Cargá el nombre y el logo de tu empresa con el icono de ajustes.")}
-function openRec(b){b=b||snap();pv=$("v2").hidden?1:2;RCUR=b.cur||"";$("rc").value=b.cli||"";var t=new Date();$("rf").value=t.getFullYear()+"-"+("0"+(t.getMonth()+1)).slice(-2)+"-"+("0"+t.getDate()).slice(-2);$("rd").value=b.name;$("rq").value=b.qty;$("ru").value=Math.round(b.R.tot/b.qty*100)/100;recTot();view(3)}
+function recTot(){$("rt").textContent="Total: "+RCUR+" "+nf(n("rq")*n("ru"))}
+function openRec(b){b=b||snap();RM=b.mode||mode;pv=$("v2").hidden?1:2;RCUR=b.cur||"";$("rc").value=b.cli||"";var t=new Date();$("rf").value=t.getFullYear()+"-"+("0"+(t.getMonth()+1)).slice(-2)+"-"+("0"+t.getDate()).slice(-2);$("rd").value=b.name;$("rq").value=b.qty;$("ru").value=Math.round(b.R.tot/b.qty*100)/100;recTot();view(3)}
 function wrap(s,wd,z){var L=[],c="";String(s).split(/\s+/).forEach(function(w){var t=c?c+" "+w:w;if(pw(t,z)>wd&&c){L.push(c);c=w}else c=t});if(c)L.push(c);return L.slice(0,3)}
 function mkpdf2(ct,im){var ob=[],i;ob[1]="<</Type/Catalog/Pages 2 0 R>>";ob[2]="<</Type/Pages/Kids[3 0 R]/Count 1>>";
 ob[3]="<</Type/Page/Parent 2 0 R/MediaBox[0 0 595 842]/Contents 4 0 R/Resources<</Font<</F1 5 0 R/F2 6 0 R>>"+(im?"/XObject<</Im1 7 0 R>>":"")+">>>>";
@@ -324,10 +342,10 @@ Ln(57,541,781,"0.89 0.91 0.93",0.75);T(57,799,"¡Gracias por su compra! — "+nm
 return mkpdf2(o.join("\n"),co.l?{b:atob(co.l.split(",")[1]),w:co.w,h:co.h}:null)}
 $("bco").onclick=function(){showCo();bkInfo();lockUI();view(4)};$("back4").onclick=function(){view(1)};$("back3").onclick=function(){view(pv)};$("brc").onclick=function(){openRec(null)};
 $("cn").oninput=function(){CO.n=this.value;saveCo()};$("cl").onchange=function(){var f=this.files[0];this.value="";if(f)procLogo(f)};
-$("cx").onclick=function(){CO.l="";CO.w=CO.h=0;saveCo();showCo()};$("rq").oninput=$("ru").oninput=recTot;
+$("cs").onchange=function(){CSEL=this.value;CO=COS[CSEL];showCo()};$("cx").onclick=function(){CO.l="";CO.w=CO.h=0;saveCo();showCo()};$("rq").oninput=$("ru").oninput=recTot;
 $("rdl").onclick=function(){var d=$("rf").value.split("-"),d0=d.length===3?new Date(+d[0],+d[1]-1,+d[2]):new Date();
-dl(slug("Recibo_"+($("rc").value||$("rd").value))+".pdf",mkrec({co:CO,mode:mode,cur:RCUR,cli:$("rc").value.trim(),dt:d0.toLocaleDateString("es",{day:"numeric",month:"long",year:"numeric"}),desc:$("rd").value,qty:n("rq"),unit:n("ru"),pay:$("rp").value,est:$("re").value}),"application/pdf")};
-function renderList(){var F=sFind();$("ln").textContent=!LIST.length?"Todavía no guardaste ningún presupuesto.":F.length===LIST.length?"Guardados en este navegador.":F.length+" de "+LIST.length+" presupuestos.";$("xall").hidden=!LIST.length;
+dl(slug("Recibo_"+($("rc").value||$("rd").value))+".pdf",mkrec({co:COS[RM],mode:RM,cur:RCUR,cli:$("rc").value.trim(),dt:d0.toLocaleDateString("es",{day:"numeric",month:"long",year:"numeric"}),desc:$("rd").value,qty:n("rq"),unit:n("ru"),pay:$("rp").value,est:$("re").value}),"application/pdf")};
+function renderList(){var F=sFind();$("ln").textContent=!LIST.length?"Todavía no guardaste ningún presupuesto.":F.length===LIST.length?"":F.length+" de "+LIST.length+" presupuestos.";$("xall").hidden=!LIST.length;
 $("list").innerHTML=F.map(function(b){return'<div class="it'+(b.ok?' ok':'')+'"><div class="top"><div><h3>'+esc(b.name)+'</h3>'+(b.cli?'<small>Cliente: '+esc(b.cli)+'</small><br>':'')+'<small>'+dt(b.ts)+", "+mn(b.mode)+(b.mat?", "+esc(b.mat):"")+(b.qty>1?", "+b.qty+" u.":"")+'</small></div><span class="t">'+fm(b.cur,b.R.tot)+'</span></div><label class="sw" style="margin-top:10px"><input type="checkbox" role="switch" data-a="k" data-i="'+b.id+'"'+(b.ok?' checked':'')+'><span>Aprobado</span></label><div class="acts"><button class="btn" data-a="o" data-i="'+b.id+'">Abrir</button><button class="btn" data-a="p" data-i="'+b.id+'">PDF</button><button class="btn" data-a="x" data-i="'+b.id+'">Excel</button><button class="btn" data-a="r" data-i="'+b.id+'">Recibo</button><button class="btn" data-a="d" data-i="'+b.id+'">Eliminar</button></div></div>'}).join("")+(LIST.length&&!F.length?'<p class="note">No hay presupuestos que coincidan con la búsqueda.</p>':"")}
 async function dl(name,data,mime){var d=null;try{d=window.claude&&await claude.use("downloads")}catch(e){}
 if(d){try{await d.save({filename:name,data:data});msg("Archivo listo: "+name)}catch(e){if(!e||e.code!=="declined")msg("No se pudo guardar el archivo.")}return}
@@ -402,7 +420,8 @@ if(!ios&&!an){window.open("https://mail.google.com/mail/?view=cm&fs=1&to="+e(to)
 var t=setTimeout(function(){location.href=mt},1500);
 function h(){if(document.hidden){clearTimeout(t);document.removeEventListener("visibilitychange",h)}}document.addEventListener("visibilitychange",h);
 location.href=ios?"googlegmail:///co?to="+e(to)+"&subject="+e(su)+"&body="+e(bo):"intent:"+to+"#Intent;scheme=mailto;package=com.google.android.gm;S.android.intent.extra.SUBJECT="+e(su)+";S.android.intent.extra.TEXT="+e(bo)+";S.browser_fallback_url="+e(mt)+";end"}
-$("bg").onclick=function(){gmail(snap())};$("bl2").onclick=function(){view(2)};$("back").onclick=function(){view(1)};$("bs").onclick=function(){saveB(false)};$("bsc").onclick=function(){saveB(true)};
+function wapp(b){var L=info(b).slice(0,4).map(function(r){return r[0]+": "+r[1]});L.push("Precio final: "+fm(b.cur,b.R.tot));if(b.qty>1)L.push("Precio por pieza: "+fm(b.cur,b.R.tot/b.qty));var t="Hola, te envío el presupuesto:\n\n"+L.join("\n"),e=encodeURIComponent,u="https://wa.me/?text="+e(t);if(window.NB&&NB.native){location.href="intent://send?text="+e(t)+"#Intent;scheme=whatsapp;package=com.whatsapp;S.browser_fallback_url="+e(u)+";end";return}window.open(u,"_blank")}
+$("bg").onclick=function(){gmail(snap())};$("bwa").onclick=function(){wapp(snap())};$("bl2").onclick=function(){view(2)};$("back").onclick=function(){view(1)};$("bs").onclick=function(){saveB(false)};$("bsc").onclick=function(){saveB(true)};
 $("bp").onclick=function(){pdf(snap())};$("bx").onclick=function(){xl(snap())};$("xall").onclick=xlAll;
 $("list").onclick=function(e){var t=e.target.closest("button");if(!t)return;var id=t.dataset.i,b=LIST.filter(function(x){return x.id===id})[0];if(!b)return;var a=t.dataset.a;
 if(a==="o")openB(b);else if(a==="p")pdf(b);else if(a==="x")xl(b);else if(a==="r")openRec(b);else if(a==="d"){if(t.dataset.c){LIST=LIST.filter(function(x){return x.id!==id});if(curId===id)curId=null;saveL();renderList();sync()}else{t.dataset.c=1;t.textContent="Confirmar eliminación"}}};
@@ -411,7 +430,7 @@ c.checked=c.value==="1";m.checked=m.value==="1";l.checked=l.value==="1";var tp=c
 L("h",(C?"Horas de costura":"Horas de máquina")+tp);L("min",(C?"Minutos de costura":"Minutos de máquina")+tp);
 L("f_g","Peso usado"+mp);L("l_a",m.checked?"Área ocupada por pieza":"Área ocupada por el trabajo");L("c_u","Tela usada"+mp);L("c_g","Relleno usado"+mp);L("c_a","Hilo y avíos"+mp);
 L("pm",(C?"Patronaje y corte":"Preparación del archivo")+lp);L("qm",(C?"Relleno y acabado":"Posprocesado y acabado")+lp);document.querySelectorAll(".mr .mq").forEach(function(e){e.placeholder="Cantidad"+mp})}
-var tw=document.createElement("label");tw.className="sw";tw.innerHTML='<input type="checkbox" id="tpp" role="switch" value="0"><span>Tiempo por pieza</span><span class="note" id="ttot">Activalo para cargar el tiempo de una sola pieza: la app lo multiplica por la cantidad.</span>';
+var tw=document.createElement("label");tw.className="sw";tw.innerHTML='<input type="checkbox" id="tpp" role="switch" value="0"><span>Tiempo por pieza</span><span class="note" id="ttot"></span>';
 $("min").closest("label").insertAdjacentElement("afterend",tw);
 $("tpp").onchange=function(){this.value=this.checked?"1":"0";syncTpp();calc()};
 var mw=document.createElement("label");mw.className="sw";mw.innerHTML='<input type="checkbox" id="mpp" role="switch" value="0"><span>Material por pieza</span><span class="note" id="mtot"></span>';tw.insertAdjacentElement("afterend",mw);$("mpp").onchange=function(){this.value=this.checked?"1":"0";syncTpp();calc()};
@@ -425,7 +444,7 @@ r.querySelector(".ms").innerHTML=matOpts();r.querySelector(".mn").value=nm||"";r
 r.querySelector(".mq").placeholder="Cantidad"+($("mpp").checked?" por pieza":"");
 r.querySelector(".ms").onchange=function(){var m=MAT[mode][this.value];if(!m)return;var pr=mode==="L"?m.p/((m.w*m.h)||1):mode==="C"?m.p:m.p/(m.w||1);r.querySelector(".mn").value=m.n;r.querySelector(".mu").value=mode==="L"?"cm²":mode==="C"?"m":"g";r.querySelector(".mp").value=Math.round(pr*1e6)/1e6;this.value="";calc()};
 r.querySelector(".mx").onclick=function(){r.remove();calc()};$("mrows").appendChild(r)}
-var ms0=document.createElement("section");ms0.id="msec";ms0.innerHTML='<h2>Materiales adicionales</h2><div id="mrows"></div><button class="btn add" id="madd" type="button">Añadir material</button><p class="note">Sumá otros materiales del trabajo: otra tela, un segundo filamento, botones, etc. Elegí uno guardado para cargar su precio o completá los datos a mano. Se les aplica el margen del material principal.</p>';
+var ms0=document.createElement("section");ms0.id="msec";ms0.innerHTML='<h2>Materiales adicionales</h2><div id="mrows"></div><button class="btn add" id="madd" type="button">Añadir material</button>';
 $("form").insertBefore(ms0,[].filter.call($("form").children,function(x){var h=x.querySelector("h2");return h&&h.textContent==="Electricidad"})[0]);
 $("madd").onclick=function(){addMat();calc()};
 function addRow(d,a,q){var r=document.createElement("div");r.className="row";
@@ -447,7 +466,7 @@ document.querySelectorAll(".row").forEach(function(r){ot+=(parseFloat(r.querySel
 var sub=mat+el+lab+mc+ot,gan=sub*n("gan")/100,vat=(sub+gan)*n("vat")/100,tot=sub+gan+vat;
 R={mat:mat,el:el,lab:lab,mc:mc,ot:ot,gan:gan,vat:vat,tot:tot,qty:qty,hrs:hrs,per:per};
 [mat,el,lab,mc,ot,vat,tot,tot/qty,gan].forEach(function(v,i){$("s"+(i+1)).textContent=money(v)});
-$("ttot").textContent=$("tpp").checked?"Total para "+qty+" piezas: "+fh(hrs):"Activalo para cargar el tiempo de una sola pieza: la app lo multiplica por la cantidad.";$("mtot").textContent=$("mpp").checked?"Total para "+qty+" piezas: "+(mode==="C"?Math.round(n("c_u")*qty*100)/100+" m de tela y "+Math.round(n("c_g")*qty)+" g de relleno":L?Math.round(n("l_a")*qty*100)/100+" cm²":Math.round(n("f_g")*qty*100)/100+" g"):"Activalo para cargar el material de una sola pieza: la app lo multiplica por la cantidad.";$("ltot").textContent=$("lpp").checked?"Total para "+qty+" piezas: "+fh((n("pm")+n("qm"))/60*qty):"Activalo para cargar la mano de obra de una sola pieza: la app la multiplica por la cantidad.";$("uw").style.display=qty>1?"":"none";$("bt").textContent=money(tot);
+$("ttot").textContent=$("tpp").checked?"Total para "+qty+" piezas: "+fh(hrs):"";$("mtot").textContent=$("mpp").checked?"Total para "+qty+" piezas: "+(mode==="C"?Math.round(n("c_u")*qty*100)/100+" m de tela y "+Math.round(n("c_g")*qty)+" g de relleno":L?Math.round(n("l_a")*qty*100)/100+" cm²":Math.round(n("f_g")*qty*100)/100+" g"):"";$("ltot").textContent=$("lpp").checked?"Total para "+qty+" piezas: "+fh((n("pm")+n("qm"))/60*qty):"";$("uw").style.display=qty>1?"":"none";$("bt").textContent=money(tot);
 document.querySelectorAll(".cur").forEach(function(e){e.textContent=$("cur").value||""});
 save()}
 function save(){try{var o={mode:mode,v:{},rows:[]};document.querySelectorAll("#form input,#vat,#gan").forEach(function(i){if(i.type!=="file"&&i.id)o.v[i.id]=i.value});
@@ -468,7 +487,7 @@ try{var o=JSON.parse(localStorage.getItem(KEY)||"null");if(o){Object.keys(o.v).f
 var LK="calc3dlaser.lock",lkOn=false,lkT=0,BKT="Guarda presupuestos, materiales y datos de la empresa en un archivo. Hacelo seguido: si desinstalás la app o borrás sus datos, se pierde lo que no respaldaste.";
 try{lkOn=localStorage.getItem(LK)==="1"}catch(e){}
 function isNat(){return!!(window.NB&&NB.native)}
-function lockUI(){var c=$("lk");c.checked=lkOn;c.disabled=!isNat();$("lkn").textContent=isNat()?"Pide huella, rostro o el PIN del teléfono al abrir la app.":"Disponible en la app Android."}
+function lockUI(){var c=$("lk");c.checked=lkOn;c.disabled=!isNat();$("lkn").textContent=isNat()?"":"Disponible en la app Android."}
 async function unlock(){$("lmsg").textContent="";var ok=await NB.auth();if(ok)$("lock").hidden=true;else $("lmsg").textContent="No se pudo verificar. Tocá Desbloquear para reintentar.";return ok}
 function lockNow(){if(lkOn&&isNat()){$("lock").hidden=false;unlock()}}
 $("ul").onclick=unlock;
@@ -476,15 +495,15 @@ $("lk").onchange=async function(){var c=this,w=c.checked;c.checked=!w;var r=awai
 window.addEventListener("nb-pause",function(){lkT=Date.now()});
 window.addEventListener("nb-resume",function(){if(lkOn&&!NB.busy&&Date.now()-lkT>60000)lockNow()});
 window.__back=function(){if(!$("lock").hidden)return true;if(!$("v1").hidden)return false;view($("v3").hidden?1:pv);return true};
-function bkInfo(){var t=0;try{t=+localStorage.getItem("calc3dlaser.lastbk")||0}catch(e){}$("bkn").textContent=BKT+(t?" Último respaldo: "+dt(t)+".":" Todavía no hiciste ningún respaldo.")}
+function bkInfo(){var t=0;try{t=+localStorage.getItem("calc3dlaser.lastbk")||0}catch(e){}$("bkn").textContent=t?"Último respaldo: "+dt(t)+".":"Todavía no hiciste ningún respaldo."}
 function bkExport(){var d=new Date(),ds=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);
-dl("respaldo-calculadora-"+ds+".json",new TextEncoder().encode(JSON.stringify({app:"calc3dlaser",v:1,ts:Date.now(),budgets:LIST,orders:window.ORD||[],mats:MAT,company:CO})),"application/json");
+dl("respaldo-calculadora-"+ds+".json",new TextEncoder().encode(JSON.stringify({app:"calc3dlaser",v:1,ts:Date.now(),budgets:LIST,orders:window.ORD||[],mats:MAT,company:COS["3"],companies:COS})),"application/json");
 try{localStorage.setItem("calc3dlaser.lastbk",String(Date.now()))}catch(e){}bkInfo()}
 function bkImport(f){var rd=new FileReader();rd.onload=function(){try{var o=JSON.parse(rd.result);if(!o||o.app!=="calc3dlaser")throw 0;var m={};LIST.forEach(function(b){m[b.id]=b});
 (o.budgets||[]).forEach(function(b){if(b&&b.id&&b.R&&(!m[b.id]||(b.upd||b.ts)>=(m[b.id].upd||m[b.id].ts)))m[b.id]=b});
 LIST=Object.keys(m).map(function(k){return m[k]}).sort(function(a,b){return b.ts-a.ts});saveL();if(window.ordMerge)ordMerge(o.orders);
 if(o.mats&&o.mats["3"]&&o.mats.L){MAT=o.mats;if(!MAT.C)MAT.C=DEFC.slice();saveM();fillSel("3");fillSel("L");fillSel("C")}
-if(o.company&&typeof o.company.n==="string"){CO=o.company;saveCo();showCo()}
+if(o.companies){["3","L","C"].forEach(function(m){if(o.companies[m]&&typeof o.companies[m].n==="string")COS[m]=o.companies[m]});CO=COS[CSEL];saveCo();showCo()}else if(o.company&&typeof o.company.n==="string"){["3","L","C"].forEach(function(m){COS[m]=JSON.parse(JSON.stringify(o.company))});CO=COS[CSEL];saveCo();showCo()}
 sync();msg("Respaldo importado: "+LIST.length+" presupuestos.")}catch(e){msg("El archivo no es un respaldo válido.")}};rd.readAsText(f)}
 $("bke").onclick=bkExport;$("bki").onchange=function(){var f=this.files[0];this.value="";if(f)bkImport(f)};
 if(lkOn&&isNat()){$("lock").hidden=false;setTimeout(unlock,400)}
@@ -507,7 +526,7 @@ $("sk").innerHTML=[["Presupuestos",a.n],["Piezas",nf(a.q)],["Horas de máquina",
 $("si").innerHTML=l.length?SK.map(function(k,i){return'<div class="bi"><div class="l"><span>'+SL[i]+"</span><b>"+c+" "+smy(a[k])+"</b></div></div>"}).join(""):'<p class="note">'+(pr.e?"Elegí una fecha o un rango de fechas.":"No hay presupuestos aprobados en este período.")+"</p>";
 var all=sAgg([].concat.apply([],keys.map(function(k){return mo[k]}))),row=function(n,g){return"<tr><td>"+n+"</td><td>"+g.n+"</td><td>"+nf(g.q)+"</td><td>"+shr(g.h)+"</td>"+SK.map(function(s){return"<td>"+smy(g[s])+"</td>"}).join("")+"</tr>"};
 $("sm2").innerHTML=keys.length?"<tr><th>Mes</th><th>Presup.</th><th>Piezas</th><th>Horas</th>"+SL.map(function(x){return"<th>"+x+"</th>"}).join("")+"</tr>"+keys.slice().reverse().map(function(k){return row(mlab(k),sAgg(mo[k]))}).join("")+row("Total",all):"";
-var na=LIST.filter(function(b){return b.ok}).length;$("sn").textContent=na?"Se cuentan solo los presupuestos aprobados ("+na+" de "+LIST.length+"), en el mes en que se aprobaron. Los importes se suman como se guardaron, sin convertir monedas.":"No hay presupuestos aprobados. En Presupuestos, activá “Aprobado” en los que se concretaron y acá aparecen sus totales.";$("sx").hidden=!na}
+var na=LIST.filter(function(b){return b.ok}).length;$("sn").textContent="";$("sx").hidden=!na}
 function sExcel(){var mo=sData(),keys=Object.keys(mo).sort(),sel=$("sm").value,B=function(x){return{b:x}},M=function(v){return{m:Math.round(v*100)/100}},t=$("st").value,tl=t==="3"?"Impresión 3D":t==="L"?"Láser diodo":t==="C"?"Costura":"Todos",c=$("cur").value||"",all=[],r1=[["Mes","Presupuestos","Piezas","Horas de máquina"].concat(SL).map(B)];
 var line=function(n,g){return[n,g.n,g.q,Math.round(g.h*100)/100].concat(SK.map(function(s){return M(g[s])}))};
 keys.forEach(function(k){all=all.concat(mo[k]);r1.push(line(mlab(k),sAgg(mo[k])))});r1.push(line(B("Total"),sAgg(all)));
@@ -536,5 +555,6 @@ $("bklt").onclick=function(){try{localStorage.setItem("calc3dlaser.bksnooze",Str
 loadL();sync();bkCheck();syncTpp();setMode(mode);
 </script>
 <script src="pedidos.js"></script>
+<script src="ajustes.js"></script>
 </body>
 </html>
